@@ -13,12 +13,11 @@ public class Order {
         return users;
     }
 
-    public void setUsers(Users users)
-    {
+    public void setUsers(Users users){
         this.users = users;
     }
 
-    public String getOrderId() {
+    public String getOrderId(){
         return orderId;
     }
     public void setOrderId(String orderId) {
@@ -30,36 +29,28 @@ public class Order {
         return itemName;
     }
 
-    public void setItemName(String itemName)
-    {
+    public void setItemName(String itemName) {
         this.itemName = itemName;
         setOrderId(itemName);
     }
 
-    public int getQuantity() {
+    public int getQuantity(){
         return quantity;
     }
 
-    public void setQuantity(int quantity)
-    {
+    public void setQuantity(int quantity){
         this.quantity = quantity;
     }
 
-    public int getTotal() {
+    public int getTotal(){
         return total;
     }
 
-    public void setTotal(int total)
-    {
+    public void setTotal(int total){
         this.total = total;
     }
 
-    public void prepareOrder()
-    {
-        System.out.println("Preparing order for user: "
-                + this.getUsers().getLastName() +' '
-                + this.getUsers().getSurName()
-                + "who ordered"
-                + this.getItemName());
+    public void prepareOrder(){
+        System.out.println("Preparing order for user: "+ this.getUsers().getLastName() + this.getUsers().getSurName() + "who ordered" + this.getItemName());
     }
 }

@@ -5,24 +5,23 @@ public class Users {
     private String lastName;
     private String address;
 
-    public String getSurName() {
+    public String getSurName(){
         return surName;
     }
-    public void setSurName(String surName) {
+    public void setSurName(String surName){
         this.surName = surName;
     }
-    public String getLastName() {
+    public String getLastName(){
         return lastName;
     }
-    public void setLastName(String lastName) {
+    public void setLastName(String lastName){
         this.lastName = lastName;
     }
-    public String getAddress() {
+    public String getAddress(){
         return address;
     }
 
-    public void setAddress(String address)
-    {
+    public void setAddress(String address){
         this.address = address;
     }
 }

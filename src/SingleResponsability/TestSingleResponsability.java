@@ -3,20 +3,20 @@ package SingleResponsability;
 public class TestSingleResponsability {
     public static void main(String[] args)
     {
-       Users users1 = new Users();
-        users1.setSurName("Ambros");
-        users1.setLastName("Vasile");
-        users1.setAddress("Falesti");
-        Order order1 = new Order();
-        order1.setItemName("ASUS PRIME A520M-E, Socket AM4");
-        order1.setQuantity(2);
-        order1.setUsers(users1);
-        order1.prepareOrder();
+       Users usersTest = new Users();
+        usersTest.setSurName("Ambros");
+        usersTest.setLastName("Vasile");
+        usersTest.setAddress("Falesti");
+        Order orderTest = new Order();
+        orderTest.setItemName("ASUS PRIME A520M-E, Socket AM4");
+        orderTest.setQuantity(2);
+        orderTest.setUsers(usersTest);
+        orderTest.prepareOrder();
 
-        TotalOrder total = new TotalOrder(order1);
+        TotalOrder total = new TotalOrder(orderTest);
         total.calculate();
 
-        Delivery deliveryOrder = new Delivery(order1);
+        Delivery deliveryOrder = new Delivery(orderTest);
         deliveryOrder.delivery();
     }
 }
