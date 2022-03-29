@@ -51,6 +51,6 @@ public class Order {
     }
 
     public void prepareOrder(){
-        System.out.println("Preparing order for user: "+ this.getUsers().getLastName() + this.getUsers().getSurName() + "who ordered" + this.getItemName());
+        System.out.println("Preparing order for user: "+ this.getUsers().getLastName() + this.getUsers().getSurName() + " who ordered " + this.getItemName());
     }
 }

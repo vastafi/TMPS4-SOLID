@@ -4,14 +4,14 @@ public class TestDependencyInversion {
 
     @Test
     public void testPress() throws Exception {
-        Commutator switchablePC = new Computer();
-        Switch computerPowerSwitch = new PowerSwitch(switchablePC);
-        computerPowerSwitch.press();
-        computerPowerSwitch.press();
-        Commutator switchableTV = new Television();
-        Switch tvPowerSwitch=new PowerSwitch(switchableTV);
-        tvPowerSwitch.press();
-        tvPowerSwitch.press();
+        Worker taskManagerDevelop = new Developper();
+        Manager taskManager1 = new TaskManager(taskManagerDevelop);
+        taskManager1.delegateTasks();
+        taskManager1.delegateTasks();
+        Worker taskManagerTester = new Tester();
+        Manager taskManager2=new TaskManager(taskManagerTester);
+        taskManager2.delegateTasks();
+        taskManager2.delegateTasks();
       
     }
 }
