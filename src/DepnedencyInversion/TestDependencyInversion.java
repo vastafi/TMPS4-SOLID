@@ -9,7 +9,7 @@ public class TestDependencyInversion {
         taskManager1.delegateTasks();
         taskManager1.delegateTasks();
         Worker taskManagerTester = new Tester();
-        Manager taskManager2=new TaskManager(taskManagerTester);
+        Manager taskManager2 = new TaskManager(taskManagerTester);
         taskManager2.delegateTasks();
         taskManager2.delegateTasks();
       

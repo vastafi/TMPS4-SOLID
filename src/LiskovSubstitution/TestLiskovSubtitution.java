@@ -8,9 +8,9 @@ public class TestLiskovSubtitution {
         List <Media> media = new ArrayList<Media>();
         media.add(new TrailerPlayer());
         media.add(new FilmPlayer());
-        playVideoInAllMediaPlayers(media);
+        playAll(media);
 }
-    public static void playVideoInAllMediaPlayers(List<Media> players) {
+    public static void playAll(List<Media> players) {
         for (Media media: players) {
             media.watchFilm();
             media.playTrailer();
